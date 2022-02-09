@@ -1,0 +1,24 @@
+.contenedorVideo{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    .videoIndex{
+        .contenedorImg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #fff, $alpha: 0.8);
+            img{
+                width: 100%;
+                height: 100%;
+                opacity: 40%;
+            };
+        }
+        video{
+            width: 100%;
+        }
+    }
+}
+
+
+
