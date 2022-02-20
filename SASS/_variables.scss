@@ -3,10 +3,18 @@
     padding: 0;
 }
 
-@mixin flex-justify{
+@mixin flex-justify ($direccion,$wrap,$justify,$align){
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-content: $align;
+}
+
+.bloqueViewport{
+    height: 100vh;
+}
+.bloqueViewportAnexo{
+    height: 100%;
+    width: 100%;
 }
