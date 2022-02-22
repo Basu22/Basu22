@@ -1,7 +1,3 @@
-
-
-
-
 clases.forEach(el => {
     let art=document.createElement("article");
     art.classList.add("col-12","cajaClase");
@@ -18,35 +14,44 @@ clases.forEach(el => {
             articulo.remove();
             id=art.id
             clase=clases.find((item)=>item.id==id)
+            console.log(clase.horario)
             let artEscucha=document.createElement("article");
             artEscucha.classList.add("row","cajaDetalle");
-            artEscucha.innerHTML=   `<article class="col-6">
-                                    <h1>${clase.clase}</h1>
-                                    <h2>${clase.horario}</h2>
+            artEscucha.innerHTML=   `<article class="col-12">
+                                        <h1>${clase.clase}</h1>
                                     </article>
-                                    <article class="col-6 imgProfes">
-                                    <img src="${clase.portada}" alt="">
-                                    <h3>Prof. ${clase.profesor}</h3>
+                                    <article class="col-5">
+                                        ${clase.horario.map((h)=>`<h2>📅${h}</h2>`).join("")}
+                                    </article>
+                                    <article class="col-7 imgProfes">
+                                        <img src="${clase.portada}" alt="">
+                                    </article>
+                                    <article class="col-12">
+                                        <h3>Prof. ${clase.profesor}</h3>
                                     </article>`
-
-            document.getElementById("detalleClases").appendChild(artEscucha)
+    document.getElementById("detalleClases").appendChild(artEscucha)
+        
         }else{
             id=art.id
             clase=clases.find((item)=>item.id==id)
             let artEscucha=document.createElement("article");
             artEscucha.classList.add("row","cajaDetalle");
-            artEscucha.innerHTML=   `<article class="col-6">
-                                    <h1>${clase.clase}</h1>
-                                    <h2>${clase.horario}</h2>
+            artEscucha.innerHTML=   `<article class="col-12">
+                                        <h1>${clase.clase}</h1>
                                     </article>
-                                    <article class="col-6 imgProfes">
-                                    <img src="${clase.portada}" alt="">
-                                    <h3>Prof. ${clase.profesor}</h3>
+                                    <article class="col-5">
+                                        ${clase.horario.map((h)=>`<h2>📅${h}</h2>`).join("")}
+                                    </article>
+                                    <article class="col-7 imgProfes">
+                                        <img src="${clase.portada}" alt="">
+                                    </article>
+                                    <article class="col-12">
+                                        <h3>Prof. ${clase.profesor}</h3>
                                     </article>`
             document.getElementById("detalleClases").appendChild(artEscucha)
         }
     })
-
+            
 })
 
 

@@ -3,7 +3,7 @@ clases=[
         id:1,
         clase: "Ritmos KIDS",
         profesor:"Brian Yamil Berri",
-        horario: "Sábados 17.30hs",
+        horario: ["Sábados 17.30hs"],
         en: "Salón",
         portada:"./contenido/clases/profes/brian/brian4.jpeg",
         carousel:["./img/profes/brian/brian1.jpeg","./img/profes/brian/brian2.jpeg","./img/profes/brian/brian3.jpeg"]
@@ -12,7 +12,7 @@ clases=[
         id:2,
         clase: "Ritmos Latinos",
         profesor:"Brian Yamil Berri",
-        horario: "Sábados 18.30hs",
+        horario: ["Sábados 18.30hs"],
         en: "Salón",
         portada:"./contenido/clases/profes/brian/brian1.jpeg",
         carousel:["./img/profes/brian/brian2.jpeg","./img/profes/brian/brian3.jpeg","./img/profes/brian/brian4.jpeg"]
@@ -30,7 +30,7 @@ clases=[
         id:4,
         clase: "Artes  Visuales",
         profesor:"Samanta Araceli Mendola",
-        horario: "Lunes 19.30hs",
+        horario: ["Lunes 19.30hs"],
         en: "Aula",
         portada:"./contenido/clases/profes/samanta/samantaArteVisual1.jpeg",
         carousel:["./img/profes/brian/brian2.jpeg","./img/profes/brian/brian3.jpeg","./img/profes/brian/brian4.jpeg"]
@@ -75,7 +75,7 @@ clases=[
         id:9,
         clase: "Reggaeton KIDS",
         profesor:"Leonela Medina",
-        horario: "Martes 17.30hs",
+        horario: ["Martes 17.30hs"],
         en: "Salón",
         portada:"./contenido/clases/profes/leonela/leonelaReggaeton1.jpeg",
         carousel:["./contenido/clases/profes/brian/brian2.jpeg","./contenido/clases/profes/brian/brian3.jpeg","./img/profes/brian/brian4.jpeg"]
@@ -84,7 +84,7 @@ clases=[
         id:10,
         clase: "Reggaeton JUVENIL",
         profesor:"Leonela Medina",
-        horario: "Martes 18.30hs",
+        horario: ["Martes 18.30hs"],
         en: "Salón",
         portada:"./contenido/clases/profes/leonela/leonelaReggaeton1.jpeg",
         carousel:["./contenido/clases/profes/brian/brian2.jpeg","./contenido/clases/profes/brian/brian3.jpeg","./contenido/clases/profes/brian/brian4.jpeg"]
@@ -102,7 +102,7 @@ clases=[
         id:12,
         clase: "Arte KIDS",
         profesor:"Leonardo Jara",
-        horario: "Martes 18.30hs",
+        horario: ["Martes 18.30hs"],
         en: "Aula",
         portada:"./contenido/clases/profes/brian/brian1.jpeg",
         carousel:["./contenido/clases/profes/brian/brian2.jpeg","./contenido/clases/profes/brian/brian3.jpeg","./contenido/clases/profes/brian/brian4.jpeg"]
