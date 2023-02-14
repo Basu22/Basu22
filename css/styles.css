@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel&family=Comforter&family=Permanent+Marker&family=Raleway&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+@media (min-width: 500px) and (max-width: 719px) {
+  body {
+    display: grid;
+    grid-template-areas: "header" "section" "footer";
+    height: max-content; }
+  header {
+    grid-area: header;
+    grid-template-rows: 50vh;
+    display: grid;
+    grid-template-areas: "logo" "nav";
+    align-content: center; }
+  .contenidoPrincipal {
+    grid-area: section; }
+  article {
+    padding: 20px 5px;
+    text-align: center;
+    font-size: 1.2rem; }
+  .articuloSecundario {
+    background-image: url("../img/logos/pngwing.com.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  footer {
+    background-color: blueviolet;
+    grid-area: footer; }
+  .logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center; }
+  .logo img {
+    height: 100%; }
+  .nav {
+    grid-area: nav; }
+  .navContenido {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; }
+  .navContenido li a {
+    text-decoration: none;
+    font-size: 100%; } }
+
+/*
+-- FUNETES --
+font-family: 'Caveat', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Comforter', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Raleway', sans-serif;
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Caveat', cursive; }
+
+@media (min-width: 720px) {
+  body {
+    display: grid;
+    row-gap: 20px;
+    grid-template-rows: 20vh auto 20vh;
+    grid-template-areas: "header header header" "section section section" "footer footer footer"; }
+    body header {
+      background-color: #6fd1ff;
+      grid-area: header;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 25vh;
+      grid-template-areas: "logo . nav nav"; }
+      body header .logo {
+        grid-area: logo;
+        justify-self: center; }
+        body header .logo img {
+          height: 100%; }
+      body header .nav {
+        grid-area: nav;
+        align-self: center; }
+        body header .nav .navContenido {
+          list-style: none;
+          display: flex;
+          justify-content: space-around; }
+          body header .nav .navContenido li a {
+            text-decoration: none;
+            font-size: 1.5rem; }
+    body .contenidoPrincipal {
+      grid-area: section; }
+      body .contenidoPrincipal .seccionVideo {
+        position: relative;
+        margin-bottom: 50px; }
+        body .contenidoPrincipal .seccionVideo .articuloVideo {
+          max-height: 70vh;
+          overflow: hidden; }
+          body .contenidoPrincipal .seccionVideo .articuloVideo video {
+            transform: translateY(-200px); }
+        body .contenidoPrincipal .seccionVideo .fondoVideo {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          opacity: 50%;
+          z-index: 1; }
+        body .contenidoPrincipal .seccionVideo .articuloTitulo {
+          display: flex;
+          font-size: 2rem;
+          text-align: center;
+          padding-bottom: 50px;
+          overflow: hidden;
+          position: absolute;
+          top: 0px;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 2;
+          color: aliceblue; }
+          body .contenidoPrincipal .seccionVideo .articuloTitulo img {
+            width: 50%; }
+      body .contenidoPrincipal .articuloSecundario {
+        position: relative;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 0.5fr 4fr 0.5fr;
+        grid-template-rows: 20vh 20vh;
+        row-gap: 10px;
+        grid-template-areas: "titulo titulo titulo"  ".  texto .";
+        overflow: hidden; }
+        body .contenidoPrincipal .articuloSecundario:nth-child(2):before {
+          content: " ";
+          width: 20%;
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          left: 15px;
+          background-image: url("../img/profes/cele.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          opacity: 50%;
+          border-radius: 50%; }
+        body .contenidoPrincipal .articuloSecundario:nth-child(4):before {
+          content: " ";
+          width: 95%;
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          left: 15px;
+          background-image: url("../img/profes/brian1-removebg-preview.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          opacity: 50%;
+          background-position: right; }
+        body .contenidoPrincipal .articuloSecundario:nth-child(6):before {
+          content: " ";
+          width: 80%;
+          height: 50%;
+          position: absolute;
+          top: 0px;
+          left: 15px;
+          background-image: url("../img/logos/logo_confederacion_danza.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          opacity: 50%;
+          background-position: right; }
+        body .contenidoPrincipal .articuloSecundario .subtituloArticle {
+          grid-area: titulo;
+          background-image: url("../img/logos/pngwing.com.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: center;
+          font-size: 1.5rem; }
+        body .contenidoPrincipal .articuloSecundario .textoArticle {
+          grid-area: texto;
+          padding: 20px;
+          font-size: 1.5rem; }
+    body footer {
+      background-color: #6fd1ff;
+      grid-area: footer;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "contenedorRedes ."; }
+      body footer .contenedorRedes {
+        grid-area: contenedorRedes; } }
