@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
 }
-@media (min-width: 500px) and (max-width: 719px){
+@media (min-width: 359px) and (max-width: 719px){
     
     body{
         display: grid;
@@ -13,64 +13,76 @@
         "section"
         "footer";
         height: max-content;
-    }
-
-
+        
         header{
-        grid-area: header;
-        grid-template-rows: 50vh;
-        display: grid;
-        grid-template-areas: 
-        "logo"
-        "nav";
-        align-content: center;
-    }
+            grid-area: header;
+            grid-template-rows: 50vh;
+            display: grid;
+                grid-template-areas: 
+                "logo"
+                "nav";
+                align-content: center;
+                
+                .logo{
+                    grid-area: logo;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        height: 100%;
+                    }
+                }
+                .nav{
+                    grid-area: nav;
+                    .navContenido{
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-around;
+                        li {
+                            a {
+                                text-decoration: none;
+                                font-size: 100%;
+                            }
+                        }
+                    }
+                }
+                
+                    
+                
+            }
+            
+            
+            main{
+                grid-area: section;
+                
+                .seccionVideo{
+                    display: none;
+                    .articuloTitulo{
+                        padding: 20px 5px;
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+                }
+                .articuloSecundario{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-image: url("../img/logos/pngwing.com.png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
 
-
-    .contenidoPrincipal{
-        grid-area: section;
-    }
-
-    article{
-        padding: 20px 5px;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    .articuloSecundario{
-        background-image: url("../img/logos/pngwing.com.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-
-    footer{
-        background-color: blueviolet;
-        grid-area: footer;
-    }
-
-    .logo{
-        grid-area: logo;
-        display: flex;
-        justify-content: center;
-    }
-
-    .logo img{
-        height: 100%;
-    }
-
-    .nav{
-        grid-area: nav;
-    }
+            footer{
+                background-color: blueviolet;
+                grid-area: footer;
+            }
+        }
     
-    .navContenido{
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
-    .navContenido li a {
-        text-decoration: none;
-        font-size: 100%;
-    }
+
+
+
+
+
+
 }
