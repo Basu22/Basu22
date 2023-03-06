@@ -41,7 +41,6 @@ font-family: 'Raleway', sans-serif;
             img{
                 height: 100%;
             }// FIN DE img
-
         } // FIN DE .logo
 
         .nav{
@@ -117,7 +116,6 @@ font-family: 'Raleway', sans-serif;
                 grid-template-areas: 
                 "titulo titulo titulo" 
                 ".  texto .";
-                overflow: hidden;
 
                     &:nth-child(2):before{
                         content: " ";
@@ -128,7 +126,7 @@ font-family: 'Raleway', sans-serif;
                         left: 15px;
                         background-image: url('../img/profes/cele.png');
                         background-repeat: no-repeat;
-                        background-size: contain;
+                        background-size: cover;
                         opacity: 50%;
                         border-radius: 50%;
                     }
@@ -176,11 +174,12 @@ font-family: 'Raleway', sans-serif;
 
                 .textoArticle{
                     grid-area: texto;
-                    padding: 20px;
                     font-size: 1.5rem;
-                }// FIN DE p
-
-            }
+                    .fraseNegrita{
+                        font-weight: bolder;
+                    }
+                }// FIN DE .textoArticle
+            }//FIN de .articuloSecundario
         } //FIN DE .contenidoPrincipal o main
 
 
@@ -189,11 +188,57 @@ font-family: 'Raleway', sans-serif;
         grid-area: footer;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: fit-content;
         grid-template-areas: 
-        "contenedorRedes .";
+        "contenedorRedes contenedorMapa";
 
             .contenedorRedes{
                 grid-area: contenedorRedes;
+                display: grid;
+                grid-template-columns: 1fr auto auto 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                ". . . ." 
+                ". red_face usuario_face ."
+                ". red_ig usuario_ig ."
+                ". red_wts usuario_wts ."
+                ". . . .";
+                font-size: 1.5rem;
+                
+                .icnFace{
+                    grid-area: red_face;
+                }
+                .usuario_face{
+                    grid-area: usuario_face;
+                }
+
+                .icnIg{
+                    grid-area: red_ig;
+                }
+                .usuario_ig{
+                    grid-area: usuario_ig;
+                }
+
+                .icnWts{
+                    grid-area: red_wts;
+                }
+                .usuario_wts{
+                    grid-area: usuario_wts;
+                }
+            }
+            .contenedorMapa{
+                grid-area: contenedorMapa;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                p{
+                    font-size: 1.5rem;
+                }
+                .mapa{
+                    height: 70%;
+                    width: 70%;
+                }
 
             }
 

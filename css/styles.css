@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0; }
 
-@media (min-width: 359px) and (max-width: 719px) {
+@media (min-width: 320px) and (max-width: 430px) {
   body {
     display: grid;
     grid-template-areas: "header" "section" "footer";
@@ -48,8 +48,21 @@
         background-repeat: no-repeat;
         background-size: cover; }
     body footer {
-      background-color: blueviolet;
-      grid-area: footer; } }
+      background-color: #6fd1ff;
+      grid-area: footer;
+      display: flex;
+      flex-direction: column;
+      align-content: space-around; }
+      body footer .contenedorRedes {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      body footer .contenedorMapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body footer .contenedorMapa .mapa {
+          width: 80%; } }
 
 /*
 -- FUNETES --
@@ -134,8 +147,7 @@ font-family: 'Raleway', sans-serif;
         grid-template-columns: 0.5fr 4fr 0.5fr;
         grid-template-rows: 20vh 20vh;
         row-gap: 10px;
-        grid-template-areas: "titulo titulo titulo"  ".  texto .";
-        overflow: hidden; }
+        grid-template-areas: "titulo titulo titulo"  ".  texto ."; }
         body .contenidoPrincipal .articuloSecundario:nth-child(2):before {
           content: " ";
           width: 20%;
@@ -145,7 +157,7 @@ font-family: 'Raleway', sans-serif;
           left: 15px;
           background-image: url("../img/profes/cele.png");
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
           opacity: 50%;
           border-radius: 50%; }
         body .contenidoPrincipal .articuloSecundario:nth-child(4):before {
@@ -185,13 +197,43 @@ font-family: 'Raleway', sans-serif;
           font-size: 1.5rem; }
         body .contenidoPrincipal .articuloSecundario .textoArticle {
           grid-area: texto;
-          padding: 20px;
           font-size: 1.5rem; }
+          body .contenidoPrincipal .articuloSecundario .textoArticle .fraseNegrita {
+            font-weight: bolder; }
     body footer {
       background-color: #6fd1ff;
       grid-area: footer;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "contenedorRedes ."; }
+      height: fit-content;
+      grid-template-areas: "contenedorRedes contenedorMapa"; }
       body footer .contenedorRedes {
-        grid-area: contenedorRedes; } }
+        grid-area: contenedorRedes;
+        display: grid;
+        grid-template-columns: 1fr auto auto 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". . . ."  ". red_face usuario_face ." ". red_ig usuario_ig ." ". red_wts usuario_wts ." ". . . .";
+        font-size: 1.5rem; }
+        body footer .contenedorRedes .icnFace {
+          grid-area: red_face; }
+        body footer .contenedorRedes .usuario_face {
+          grid-area: usuario_face; }
+        body footer .contenedorRedes .icnIg {
+          grid-area: red_ig; }
+        body footer .contenedorRedes .usuario_ig {
+          grid-area: usuario_ig; }
+        body footer .contenedorRedes .icnWts {
+          grid-area: red_wts; }
+        body footer .contenedorRedes .usuario_wts {
+          grid-area: usuario_wts; }
+      body footer .contenedorMapa {
+        grid-area: contenedorMapa;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        body footer .contenedorMapa p {
+          font-size: 1.5rem; }
+        body footer .contenedorMapa .mapa {
+          height: 70%;
+          width: 70%; } }
