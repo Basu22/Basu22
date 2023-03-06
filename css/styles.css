@@ -11,16 +11,16 @@
     height: max-content; }
     body header {
       grid-area: header;
-      grid-template-rows: 50vh;
       display: grid;
-      grid-template-areas: "logo" "nav";
+      grid-template-areas: "nav" "logo";
       align-content: center; }
       body header .logo {
         grid-area: logo;
         display: flex;
         justify-content: center; }
         body header .logo img {
-          height: 100%; }
+          height: 100%;
+          width: 100%; }
       body header .nav {
         grid-area: nav; }
         body header .nav .navContenido {
@@ -52,7 +52,8 @@
       grid-area: footer;
       display: flex;
       flex-direction: column;
-      align-content: space-around; }
+      align-content: space-around;
+      padding: 20px 0; }
       body footer .contenedorRedes {
         display: flex;
         flex-direction: column;
