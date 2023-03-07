@@ -10,9 +10,10 @@
     grid-template-areas: "header" "section" "footer";
     height: max-content; }
     body header {
+      background-color: #6fd1ff;
       grid-area: header;
       display: grid;
-      grid-template-areas: "nav" "logo";
+      grid-template-areas: "iconoNav"  "navegador" "logo";
       align-content: center; }
       body header .logo {
         grid-area: logo;
@@ -22,14 +23,30 @@
           height: 100%;
           width: 100%; }
       body header .nav {
-        grid-area: nav; }
+        grid-area: navegador;
+        position: relative; }
         body header .nav .navContenido {
+          top: 0px;
+          left: -50%;
+          position: absolute;
           list-style: none;
           display: flex;
-          justify-content: space-around; }
+          flex-direction: column;
+          align-content: space-around; }
           body header .nav .navContenido li a {
             text-decoration: none;
-            font-size: 100%; }
+            font-size: 2rem;
+            color: white; }
+      body header .iconoNav {
+        position: absolute;
+        grid-area: iconoNav;
+        left: 0px;
+        height: 5%;
+        width: 10%;
+        background-image: url(../icn/mobile_menu.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat; }
     body main {
       grid-area: section; }
       body main .seccionVideo {
@@ -107,6 +124,8 @@ font-family: 'Raleway', sans-serif;
           body header .nav .navContenido li a {
             text-decoration: none;
             font-size: 1.5rem; }
+      body header .iconoNav {
+        display: none; }
     body .contenidoPrincipal {
       grid-area: section; }
       body .contenidoPrincipal .seccionVideo {
