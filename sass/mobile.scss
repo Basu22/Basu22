@@ -82,16 +82,38 @@
                 }
 
                 .seccionFotos{
+
                     .contenedorMV1{
                         width: 100%;
                         img{
-                            width: 100vw;
+                            object-fit: contain;
+                            width: 100%;
+                            height: auto;
                         }
                     }
                     .contenedorMV2{
                         width: 100%;
                         img{
-                            width: 100vw;
+                            object-fit: contain;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .contenedorP1{
+                        width: 100%;
+                        img{
+                            object-fit: contain;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .contenedorP2{
+                        width: 100%;
+                        img{
+                            object-fit: contain;
+                            width: 100%;
+                            height: auto;
                         }
                     }
                 }

@@ -118,7 +118,7 @@
                         border-radius: 50%;
                     }
 
-                    &:nth-child(4):before{
+                    &:nth-child(5):before{
                         content: " ";
                         width: 95%;
                         height: 100%;
@@ -132,7 +132,7 @@
                         background-position: right;
                     }
 
-                    &:nth-child(6):before{
+                    &:nth-child(7):before{
                         content: " ";
                         width: 80%;
                         height: 50%;
@@ -175,6 +175,7 @@
                 "foto1 foto2";
                 justify-items: center;
                 padding: 10px 0;
+                background-color: $backgound-color;
                 .contenedorMV1{
                     display: flex;
                     grid-area: foto1;
@@ -184,8 +185,23 @@
                         width: 100%;
                     }
                 }
-
                 .contenedorMV2{
+                    grid-area: foto2;
+                    width: 50%;
+                    img{
+                        border-radius: 20%;
+                        width: 100%;
+                    }
+                }
+                .contenedorP1{
+                    grid-area: foto1;
+                    width: 50%;
+                    img{
+                        border-radius: 20%;
+                        width: 100%;
+                    }
+                }
+                .contenedorP2{
                     grid-area: foto2;
                     width: 50%;
                     img{
