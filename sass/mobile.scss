@@ -78,11 +78,24 @@
                     flex-direction: column;
                     align-items: center;
                     padding: 20px;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
                     font-size: 1.5rem;
                 }
+
+                .seccionFotos{
+                    .contenedorMV1{
+                        width: 100%;
+                        img{
+                            width: 100vw;
+                        }
+                    }
+                    .contenedorMV2{
+                        width: 100%;
+                        img{
+                            width: 100vw;
+                        }
+                    }
+                }
+
             }
 
             footer{
