@@ -1,0 +1,21 @@
+footer{
+    background-color: $backgound-color;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 20px 0;
+    .contenedorRedes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedorMapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .mapa{
+            width: 80%;
+        }
+    }
+}

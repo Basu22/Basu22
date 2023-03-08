@@ -1,0 +1,61 @@
+footer{
+    background-color: rgb(111, 209, 255);
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    grid-template-areas: 
+    "contenedorRedes contenedorMapa";
+
+        .contenedorRedes{
+            grid-area: contenedorRedes;
+            display: grid;
+            grid-template-columns: 1fr auto auto 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+            ". . . ." 
+            ". red_face usuario_face ."
+            ". red_ig usuario_ig ."
+            ". red_wts usuario_wts ."
+            ". . . .";
+            font-size: 1.5rem;
+            
+            .icnFace{
+                grid-area: red_face;
+            }
+            .usuario_face{
+                grid-area: usuario_face;
+            }
+
+            .icnIg{
+                grid-area: red_ig;
+            }
+            .usuario_ig{
+                grid-area: usuario_ig;
+            }
+
+            .icnWts{
+                grid-area: red_wts;
+            }
+            .usuario_wts{
+                grid-area: usuario_wts;
+            }
+        }
+        .contenedorMapa{
+            grid-area: contenedorMapa;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-size: 1.5rem;
+            }
+            .mapa{
+                height: 70%;
+                width: 70%;
+            }
+
+        }
+
+
+    } // FIN DE footer

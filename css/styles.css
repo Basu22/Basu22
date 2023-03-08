@@ -73,6 +73,12 @@ body {
         align-items: center;
         padding: 20px;
         font-size: 1.5rem; }
+      body main .seccionFotos .contenedorC1 {
+        width: 100%; }
+        body main .seccionFotos .contenedorC1 img {
+          object-fit: contain;
+          width: 100%;
+          height: auto; }
       body main .seccionFotos .contenedorMV1 {
         width: 100%; }
         body main .seccionFotos .contenedorMV1 img {
@@ -211,7 +217,7 @@ body {
           background-size: contain;
           opacity: 50%;
           background-position: right; }
-        body .contenidoPrincipal .articuloSecundario:nth-child(7):before {
+        body .contenidoPrincipal .articuloSecundario:nth-child(9):before {
           content: " ";
           width: 80%;
           height: 50%;
@@ -246,6 +252,8 @@ body {
         justify-items: center;
         padding: 10px 0;
         background-color: #6fd1ff; }
+        body .contenidoPrincipal .seccionFotos:nth-child(3) {
+          display: none; }
         body .contenidoPrincipal .seccionFotos .contenedorMV1 {
           display: flex;
           grid-area: foto1;

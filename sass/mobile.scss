@@ -1,150 +1,22 @@
 @media (min-width: 320px) and (max-width: 430px){
     
-        body{
-            display: grid;
-            grid-template-areas: 
-            "header"
-            "section"
-            "footer";
-            height: max-content;
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+        height: max-content;
+    
+        @import '../sass/header/header_mobile.scss';
         
-            header{
-            background-color: $backgound-color;
-            grid-area: header;
-            display: grid;
-            grid-template-areas:
-            "iconoNav" 
-            "navegador"
-            "logo";
-            align-content: center;
-                
-                .logo{
-                    grid-area: logo;
-                    display: flex;
-                    justify-content: center;
-                    img{
-                        height: 100%;
-                        width: 100%;
-                    }
-                }
-                .nav{
-                    grid-area: navegador;
-                    position: relative;
-                    .navContenido{
-                        top: 0px;
-                        left: -100%;
-                        position: absolute;
-                        list-style: none;
-                        display: flex;
-                        flex-direction: column;
-                        align-content: space-around;
-                        li {
-                            a {
-                                text-decoration: none;
-                                font-size: 2rem;
-                                color: white;
-                            }
-                        }
-                    }
-                }
-                
-                .iconoNav{
-                    position: absolute;
-                    grid-area: iconoNav;
-                    left: 0px;
-                    height: 5%;
-                    width: 10%;
-                    background-image: url(../icn/mobile_menu.png);
-                    background-position: center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
+        @import '../sass/main_index/index_mobile.scss';
 
-            }
-            
-            main{
-                grid-area: section;
-                
-                .seccionVideo{
-                    display: none;
-                    .articuloTitulo{
-                        padding: 20px 5px;
-                        text-align: center;
-                        font-size: 2rem;
-                    }
-                }
-                .articuloSecundario{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 20px;
-                    font-size: 1.5rem;
-                }
-
-                .seccionFotos{
-
-                    .contenedorMV1{
-                        width: 100%;
-                        img{
-                            object-fit: contain;
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                    .contenedorMV2{
-                        width: 100%;
-                        img{
-                            object-fit: contain;
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-
-                    .contenedorP1{
-                        width: 100%;
-                        img{
-                            object-fit: contain;
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                    .contenedorP2{
-                        width: 100%;
-                        img{
-                            object-fit: contain;
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                }
-
-            }
-
-            footer{
-                background-color: $backgound-color;
-                grid-area: footer;
-                display: flex;
-                flex-direction: column;
-                align-content: space-around;
-                padding: 20px 0;
-                .contenedorRedes{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-                .contenedorMapa{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .mapa{
-                        width: 80%;
-                    }
-                }
-            }
-            
-            
-        }
-    
-    
+        @import '../sass/footer/footer_mobile.scss';
+        
+        
     }
+    
+    
+}
     

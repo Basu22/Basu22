@@ -1,0 +1,170 @@
+.contenidoPrincipal{
+    grid-area: section;
+    
+    .seccionVideo{
+        position: relative;
+        margin-bottom: 50px;
+        
+        .articuloVideo{
+            max-height: 70vh;
+            overflow: hidden;
+            video{
+                transform: translateY(-200px);
+            }
+        }
+
+        .fondoVideo{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 50%;
+            z-index: 1;
+        }
+
+        .articuloTitulo{
+            display: flex;
+            font-size: 2rem;
+            text-align: center;
+            padding-bottom: 50px;
+            overflow: hidden;
+            position: absolute;
+            top:0px;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+            color: aliceblue;
+
+            img{
+                width: 50%;
+            }
+        }
+    }
+
+    .articuloSecundario{
+        position: relative;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 0.5fr 4fr 0.5fr;
+        grid-template-rows: 20vh 20vh;
+        row-gap: 10px;
+        grid-template-areas: 
+        "titulo titulo titulo" 
+        ".  texto .";
+
+            &:nth-child(2):before{
+                content: " ";
+                width: 20%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 15px;
+                background-image: url('../img/profes/cele.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 50%;
+                border-radius: 50%;
+            }
+
+            &:nth-child(5):before{
+                content: " ";
+                width: 95%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 15px;
+                background-image: url('../img/profes/brian1-removebg-preview.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                opacity: 50%;
+                background-position: right;
+            }
+
+            &:nth-child(9):before{
+                content: " ";
+                width: 80%;
+                height: 50%;
+                position: absolute;
+                top: 0px;
+                left: 15px;
+                background-image: url('../img/logos/logo_confederacion_danza.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                opacity: 50%;
+                background-position: right;
+            }
+
+        .subtituloArticle{
+            grid-area: titulo;
+            background-image: url("../img/logos/pngwing.com.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            font-size: 1.5rem;
+        }// FIN DE section
+
+        .textoArticle{
+            grid-area: texto;
+            font-size: 1.5rem;
+            .fraseNegrita{
+                font-weight: bolder;
+            }
+        }// FIN DE .textoArticle
+    }//FIN de .articuloSecundario
+
+    .seccionFotos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "foto1 foto2";
+        justify-items: center;
+        padding: 10px 0;
+        background-color: $backgound-color;
+
+        &:nth-child(3){
+            display: none;
+        }
+        .contenedorMV1{
+            display: flex;
+            grid-area: foto1;
+            width: 50%;
+            img{
+                border-radius: 20%;
+                width: 100%;
+            }
+        }
+        .contenedorMV2{
+            grid-area: foto2;
+            width: 50%;
+            img{
+                border-radius: 20%;
+                width: 100%;
+            }
+        }
+        .contenedorP1{
+            grid-area: foto1;
+            width: 50%;
+            img{
+                border-radius: 20%;
+                width: 100%;
+            }
+        }
+        .contenedorP2{
+            grid-area: foto2;
+            width: 50%;
+            img{
+                border-radius: 20%;
+                width: 100%;
+            }
+        }
+    
+    }
+
+} //FIN DE .contenidoPrincipal o main

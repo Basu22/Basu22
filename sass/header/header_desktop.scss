@@ -1,0 +1,37 @@
+header{
+    background-color: rgb(111, 209, 255);
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 25vh;
+    grid-template-areas: 
+    "logo . nav nav";
+
+    .logo{
+        grid-area: logo;
+        justify-self: center;
+        img{
+            height: 100%;
+        }// FIN DE img
+    } // FIN DE .logo
+
+    .nav{
+        grid-area: nav;
+        align-self: center;
+        .navContenido{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            li{
+                a {
+                    text-decoration: none;
+                    font-size: 2rem;
+                }
+            } 
+        }// FIN DE .navContenido
+    }// FIN DE .nav
+
+    .iconoNav{
+        display: none;
+    }
+} // FIN DE header

@@ -1,0 +1,53 @@
+header{
+    background-color: $backgound-color;
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+    "iconoNav" 
+    "navegador"
+    "logo";
+    align-content: center;
+        
+        .logo{
+            grid-area: logo;
+            display: flex;
+            justify-content: center;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .nav{
+            grid-area: navegador;
+            position: relative;
+            .navContenido{
+                top: 0px;
+                left: -100%;
+                position: absolute;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-content: space-around;
+                li {
+                    a {
+                        text-decoration: none;
+                        font-size: 2rem;
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+        .iconoNav{
+            position: absolute;
+            grid-area: iconoNav;
+            left: 0px;
+            height: 5%;
+            width: 10%;
+            background-image: url(../icn/mobile_menu.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+    }
