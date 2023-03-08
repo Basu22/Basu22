@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+};
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+$fuente-principal:'Shantell Sans', cursive;
+$backgound-color:rgb(111, 209, 255);
+/*
+-- FUNETES --
+font-family: 'Caveat', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Comforter', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Shantell Sans', cursive;
+*/
+
+body{
+    font-family: $fuente-principal;
+}

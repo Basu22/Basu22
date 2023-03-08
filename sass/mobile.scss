@@ -1,9 +1,3 @@
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 @media (min-width: 320px) and (max-width: 430px){
     
         body{
@@ -15,7 +9,7 @@
             height: max-content;
         
             header{
-            background-color: rgb(111, 209, 255);
+            background-color: $backgound-color;
             grid-area: header;
             display: grid;
             grid-template-areas:
@@ -38,7 +32,7 @@
                     position: relative;
                     .navContenido{
                         top: 0px;
-                        left: -50%;
+                        left: -100%;
                         position: absolute;
                         list-style: none;
                         display: flex;
@@ -76,7 +70,7 @@
                     .articuloTitulo{
                         padding: 20px 5px;
                         text-align: center;
-                        font-size: 1.2rem;
+                        font-size: 2rem;
                     }
                 }
                 .articuloSecundario{
@@ -84,15 +78,15 @@
                     flex-direction: column;
                     align-items: center;
                     padding: 20px;
-                    background-image: url("../img/logos/pngwing.com.png");
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
+                    font-size: 1.5rem;
                 }
             }
 
             footer{
-                background-color: rgb(111, 209, 255);
+                background-color: $backgound-color;
                 grid-area: footer;
                 display: flex;
                 flex-direction: column;

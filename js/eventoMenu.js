@@ -3,9 +3,9 @@ let header = document.querySelector("header")
 let eventoMenu = document.querySelector(".navContenido");
 let iconoHamb = document.querySelector(".iconoNav")
 
-iconoHamb.addEventListener("click",unClic);
+iconoHamb.addEventListener("click",clicMenu);
 
-function unClic(){
+function clicMenu(){
     if (activo==0){
         iconoHamb.style.backgroundImage = 'url(./icn/cross_menu.png)';
         eventoMenu.style.left = '10%';
@@ -15,7 +15,7 @@ function unClic(){
         activo = 1
     }else{
         iconoHamb.style.backgroundImage = 'url(./icn/mobile_menu.png)';
-        eventoMenu.style.left = '-50%'
+        eventoMenu.style.left = '-100%'
         eventoMenu.style.transition = 'left 1s' 
         header.style.removeProperty('background-color')
         activo = 0

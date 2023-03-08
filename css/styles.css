@@ -1,8 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel&family=Comforter&family=Permanent+Marker&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0; }
+
+/*
+-- FUNETES --
+font-family: 'Caveat', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Comforter', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Shantell Sans', cursive;
+*/
+body {
+  font-family: "Shantell Sans", cursive; }
 
 @media (min-width: 320px) and (max-width: 430px) {
   body {
@@ -27,7 +39,7 @@
         position: relative; }
         body header .nav .navContenido {
           top: 0px;
-          left: -50%;
+          left: -100%;
           position: absolute;
           list-style: none;
           display: flex;
@@ -54,16 +66,16 @@
         body main .seccionVideo .articuloTitulo {
           padding: 20px 5px;
           text-align: center;
-          font-size: 1.2rem; }
+          font-size: 2rem; }
       body main .articuloSecundario {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        background-image: url("../img/logos/pngwing.com.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover; }
+        background-size: cover;
+        font-size: 1.5rem; }
     body footer {
       background-color: #6fd1ff;
       grid-area: footer;
@@ -81,20 +93,6 @@
         align-items: center; }
         body footer .contenedorMapa .mapa {
           width: 80%; } }
-
-/*
--- FUNETES --
-font-family: 'Caveat', cursive;
-font-family: 'Cinzel', serif;
-font-family: 'Comforter', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Raleway', sans-serif;
-*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Caveat', cursive; }
 
 @media (min-width: 720px) {
   body {
@@ -123,7 +121,7 @@ font-family: 'Raleway', sans-serif;
           justify-content: space-around; }
           body header .nav .navContenido li a {
             text-decoration: none;
-            font-size: 1.5rem; }
+            font-size: 2rem; }
       body header .iconoNav {
         display: none; }
     body .contenidoPrincipal {
