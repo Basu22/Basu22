@@ -176,7 +176,6 @@ body {
           overflow: hidden;
           position: absolute;
           top: 0px;
-          width: 100%;
           height: 100%;
           flex-direction: column;
           justify-content: space-between;
@@ -190,7 +189,6 @@ body {
         margin-top: 10px;
         display: grid;
         grid-template-columns: 0.5fr 4fr 0.5fr;
-        grid-template-rows: 20vh 20vh;
         row-gap: 10px;
         grid-template-areas: "titulo titulo titulo"  ".  texto ."; }
         body .contenidoPrincipal .articuloSecundario:nth-child(2):before {
@@ -230,19 +228,19 @@ body {
           opacity: 50%;
           background-position: right; }
         body .contenidoPrincipal .articuloSecundario .subtituloArticle {
-          grid-area: titulo;
-          background-image: url("../img/logos/pngwing.com.png");
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: contain;
           display: flex;
-          flex-wrap: wrap;
           justify-content: center;
-          align-content: center;
+          grid-area: titulo;
           font-size: 1.5rem; }
+          body .contenidoPrincipal .articuloSecundario .subtituloArticle h2 {
+            background-image: url("../img/logos/pngwing.com.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; }
         body .contenidoPrincipal .articuloSecundario .textoArticle {
           grid-area: texto;
-          font-size: 1.5rem; }
+          font-size: 1.5rem;
+          padding: 50px 0px; }
           body .contenidoPrincipal .articuloSecundario .textoArticle .fraseNegrita {
             font-weight: bolder; }
       body .contenidoPrincipal .seccionFotos {
@@ -279,6 +277,53 @@ body {
           body .contenidoPrincipal .seccionFotos .contenedorP2 img {
             border-radius: 20%;
             width: 100%; }
+    body .contenidoClases {
+      grid-area: section;
+      display: grid;
+      grid-template-columns: 15px 1fr 1fr 15px;
+      column-gap: 5%;
+      grid-template-areas: ". c1 c2 ."; }
+      body .contenidoClases .contenedorClase1 {
+        grid-area: c1;
+        width: 100%;
+        position: relative; }
+        body .contenidoClases .contenedorClase1 img {
+          object-fit: contain;
+          width: 100%; }
+        body .contenidoClases .contenedorClase1 .contenidoAdicional {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 50%;
+          background-color: aliceblue; }
+      body .contenidoClases .contenedorClase2 {
+        grid-area: c2;
+        width: 100%; }
+        body .contenidoClases .contenedorClase2 img {
+          object-fit: contain;
+          width: 100%; }
+      body .contenidoClases .contenedorClase3 {
+        grid-area: c1;
+        width: 100%; }
+        body .contenidoClases .contenedorClase3 img {
+          object-fit: contain;
+          width: 100%; }
+      body .contenidoClases .contenedorClase4 {
+        grid-area: c2;
+        width: 100%;
+        overflow: hidden; }
+        body .contenidoClases .contenedorClase4 img {
+          object-fit: cover;
+          width: 100%; }
+      body .contenidoClases .entradaAnimacionClase {
+        transition: all 2s;
+        filter: grayscale(100%); }
+      body .contenidoClases .animacionContenidoAdicional {
+        transition: all 2s;
+        top: 50px; }
+      body .contenidoClases .salidaAnimacionClase {
+        transition: all 2s;
+        filter: grayscale(0%); }
     body footer {
       background-color: #6fd1ff;
       grid-area: footer;

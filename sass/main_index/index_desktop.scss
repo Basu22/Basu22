@@ -30,7 +30,6 @@
             overflow: hidden;
             position: absolute;
             top:0px;
-            width: 100%;
             height: 100%;
             flex-direction: column;
             justify-content: space-between;
@@ -49,7 +48,6 @@
         margin-top: 10px;
         display: grid;
         grid-template-columns: 0.5fr 4fr 0.5fr;
-        grid-template-rows: 20vh 20vh;
         row-gap: 10px;
         grid-template-areas: 
         "titulo titulo titulo" 
@@ -98,21 +96,22 @@
             }
 
         .subtituloArticle{
-            grid-area: titulo;
-            background-image: url("../img/logos/pngwing.com.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            align-content: center;
+            grid-area: titulo;
             font-size: 1.5rem;
+            h2{
+                background-image: url("../img/logos/pngwing.com.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
         }// FIN DE section
 
         .textoArticle{
             grid-area: texto;
             font-size: 1.5rem;
+            padding: 50px 0px;
             .fraseNegrita{
                 font-weight: bolder;
             }
