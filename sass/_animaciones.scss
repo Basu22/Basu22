@@ -1,0 +1,24 @@
+.entradaAnimacionClase{
+    transition: all 2s;
+    filter: grayscale(100%);
+}
+
+.salidaAnimacionClase{
+    transition: all 2s;
+    filter: grayscale(0%);
+}
+
+
+.animacionContenidoAdicional{
+    position: absolute;
+    transition: all 2s;
+    top:10px;
+}
+
+.entradaContenidoAdicional{
+    @include animacionContenidoAdicional (0px,0px,90%,100%);
+}
+
+.salidaContenidoAdicional{
+    @include animacionContenidoAdicional (0px,0px,100%,15%);
+}

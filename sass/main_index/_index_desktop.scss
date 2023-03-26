@@ -31,6 +31,7 @@
             position: absolute;
             top:0px;
             height: 100%;
+            width: 100%;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
@@ -53,47 +54,9 @@
         "titulo titulo titulo" 
         ".  texto .";
 
-            &:nth-child(2):before{
-                content: " ";
-                width: 20%;
-                height: 100%;
-                position: absolute;
-                top: 0px;
-                left: 15px;
-                background-image: url('../img/profes/cele.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                opacity: 50%;
-                border-radius: 50%;
-            }
+            @include imagenFondo(2,20%,100%,20px,15px,'../img/profes/cele.png',no-repeat,cover,50%,50%);
 
-            &:nth-child(5):before{
-                content: " ";
-                width: 95%;
-                height: 100%;
-                position: absolute;
-                top: 0px;
-                left: 15px;
-                background-image: url('../img/profes/brian1-removebg-preview.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-                opacity: 50%;
-                background-position: right;
-            }
-
-            &:nth-child(9):before{
-                content: " ";
-                width: 80%;
-                height: 50%;
-                position: absolute;
-                top: 0px;
-                left: 15px;
-                background-image: url('../img/logos/logo_confederacion_danza.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-                opacity: 50%;
-                background-position: right;
-            }
+            @include imagenFondo(9,10%,50%,0px,15px,'../img/logos/logo_confederacion_danza.png',no-repeat,contain,50%,0%);
 
         .subtituloArticle{
             display: flex;

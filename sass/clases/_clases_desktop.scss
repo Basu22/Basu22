@@ -1,0 +1,14 @@
+.contenidoClases{
+    grid-area: section;
+    display:grid;
+    grid-template-columns: 15px 1fr 1fr 15px;
+    column-gap: 5%;
+    grid-template-areas: 
+    ". c1 c2 .";
+
+    .contenedorClase{
+        //mixin en _variables - linea 24
+        @include contenedorClase;
+    }
+    
+}
