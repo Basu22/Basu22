@@ -10,7 +10,6 @@ contenedorClases.forEach(function(contenedorClase){
     claseGrid = 1;
   }
 
-
   contenedorClase.addEventListener('mouseover',function(e){
     contenedorClase.childNodes[1].classList.add('entradaAnimacionClase');
     contenedorClase.childNodes[1].classList.remove('salidaAnimacionClase');
