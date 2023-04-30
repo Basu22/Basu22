@@ -1,0 +1,32 @@
+.wtsappFlotante{
+    position: fixed;
+        @media  (min-width: 720px)  {
+            top: 80%;
+            left: 90%;
+            z-index: 999999;
+            a{
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: row;
+                img{
+                    width: 50%;
+                }
+            }
+        }
+        @media (min-width: 320px) and (max-width: 430px){
+            top: 85%;
+            left: 85%;
+            a{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: row;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        
+        }
+    
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "clase":"Ritmos Latinos",
+        "horario":{
+            "dia1":"Sabado 18hs",
+            "dia2":"Sabado 19hs"
+        },
+        "nivel":"Infantil/Juvenil Adulto",
+        "profe":"@brianyamil_berri"
+    },
+    {
+        "clase":"Ritmos Latinos",
+        "horario":{
+            "dia1":"Sabado 18hs"
+        },
+        "nivel":"Infantil/Juvenil Adulto",
+        "profe":"@brianyamil_berri"
+    }
+
+]

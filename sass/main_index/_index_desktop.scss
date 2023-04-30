@@ -82,6 +82,7 @@
     }//FIN de .articuloSecundario
 
     .seccionFotos{
+        overflow: hidden;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -89,7 +90,7 @@
         justify-items: center;
         padding: 10px 0;
         background-color: $backgound-color;
-
+        
         &:nth-child(3){
             display: none;
         }
@@ -98,32 +99,40 @@
             grid-area: foto1;
             width: 50%;
             img{
+                transform:translateY(15%);
                 border-radius: 20%;
                 width: 100%;
+                opacity: 0;
             }
         }
         .contenedorMV2{
             grid-area: foto2;
             width: 50%;
             img{
+                transform:translateY(15%);
                 border-radius: 20%;
                 width: 100%;
+                opacity: 0;
             }
         }
         .contenedorP1{
             grid-area: foto1;
             width: 50%;
             img{
+                transform:translateX(15%);
                 border-radius: 20%;
                 width: 100%;
+                opacity: 0;
             }
         }
         .contenedorP2{
             grid-area: foto2;
             width: 50%;
             img{
+                transform:translateX(15%);
                 border-radius: 20%;
                 width: 100%;
+                opacity: 0;
             }
         }
     

@@ -16,9 +16,9 @@
 }
 
 .entradaContenidoAdicional{
-    @include animacionContenidoAdicional (0px,0px,90%,100%);
+    @include animacionContenidoAdicional (1,0px,0px,90%,100%);
 }
 
 .salidaContenidoAdicional{
-    @include animacionContenidoAdicional (0px,0px,100%,15%);
+    @include animacionContenidoAdicional (0,0px,0px,100%,15%);
 }

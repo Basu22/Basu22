@@ -8,15 +8,16 @@
 .contenidoClases{
     grid-area: section;
     display:grid;
-    grid-template-columns: 15px 1fr 1fr 15px;
+    grid-template-rows: 1fr 1fr;
     column-gap: 5%;
-    grid-template-areas: 
-    ". c1 c2 .";
+    grid-template-areas:
+    "c1"
+    "c2";
 
     .contenedorClase{
         margin: 5% 0%;
         //mixin en _variables - linea 24
-        @include contenedorClase(15%);
+        @include contenedorClase(100%);
     }
     
 }

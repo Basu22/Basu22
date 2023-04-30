@@ -47,13 +47,19 @@ body {
     text-align: center; }
   .entradaContenidoAdicional .diaClase {
     grid-area: dia;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: all 2s; }
   .entradaContenidoAdicional .categoriaClase {
     grid-area: categoria;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: all 2s; }
   .entradaContenidoAdicional .profesorClase {
     grid-area: profe;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: all 2s; }
 
 .salidaContenidoAdicional {
   display: grid;
@@ -73,13 +79,19 @@ body {
     text-align: center; }
   .salidaContenidoAdicional .diaClase {
     grid-area: dia;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 2s; }
   .salidaContenidoAdicional .categoriaClase {
     grid-area: categoria;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 2s; }
   .salidaContenidoAdicional .profesorClase {
     grid-area: profe;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 2s; }
 
 @media (min-width: 320px) and (max-width: 430px) {
   body {
@@ -168,6 +180,51 @@ body {
           object-fit: contain;
           width: 100%;
           height: auto; }
+    body .tituloPrincipalClases {
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 2% 0%; }
+    body .contenidoClases {
+      grid-area: section;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 5%;
+      grid-template-areas: "c1" "c2"; }
+      body .contenidoClases .contenedorClase {
+        margin: 5% 0%;
+        width: 100%;
+        position: relative; }
+        body .contenidoClases .contenedorClase img {
+          object-fit: contain;
+          width: 100%; }
+        body .contenidoClases .contenedorClase .contenidoAdicional {
+          display: grid;
+          grid-template-areas: "titulo" "dia" "categoria" "profe";
+          position: absolute;
+          background-color: white;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.5);
+          overflow: hidden; }
+          body .contenidoClases .contenedorClase .contenidoAdicional .tituloClase {
+            grid-area: titulo;
+            font-size: 3rem;
+            text-align: center; }
+          body .contenidoClases .contenedorClase .contenidoAdicional .diaClase {
+            grid-area: dia;
+            font-size: 1.5rem;
+            opacity: 0; }
+          body .contenidoClases .contenedorClase .contenidoAdicional .categoriaClase {
+            grid-area: categoria;
+            font-size: 1.5rem;
+            opacity: 0; }
+          body .contenidoClases .contenedorClase .contenidoAdicional .profesorClase {
+            grid-area: profe;
+            font-size: 1.5rem;
+            opacity: 0; }
     body footer {
       background-color: #6fd1ff;
       grid-area: footer;
@@ -298,6 +355,7 @@ body {
           body .contenidoPrincipal .articuloSecundario .textoArticle .fraseNegrita {
             font-weight: bolder; }
       body .contenidoPrincipal .seccionFotos {
+        overflow: hidden;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "foto1 foto2";
@@ -311,26 +369,39 @@ body {
           grid-area: foto1;
           width: 50%; }
           body .contenidoPrincipal .seccionFotos .contenedorMV1 img {
+            transform: translateY(15%);
             border-radius: 20%;
-            width: 100%; }
+            width: 100%;
+            opacity: 0; }
         body .contenidoPrincipal .seccionFotos .contenedorMV2 {
           grid-area: foto2;
           width: 50%; }
           body .contenidoPrincipal .seccionFotos .contenedorMV2 img {
+            transform: translateY(15%);
             border-radius: 20%;
-            width: 100%; }
+            width: 100%;
+            opacity: 0; }
         body .contenidoPrincipal .seccionFotos .contenedorP1 {
           grid-area: foto1;
           width: 50%; }
           body .contenidoPrincipal .seccionFotos .contenedorP1 img {
+            transform: translateX(15%);
             border-radius: 20%;
-            width: 100%; }
+            width: 100%;
+            opacity: 0; }
         body .contenidoPrincipal .seccionFotos .contenedorP2 {
           grid-area: foto2;
           width: 50%; }
           body .contenidoPrincipal .seccionFotos .contenedorP2 img {
+            transform: translateX(15%);
             border-radius: 20%;
-            width: 100%; }
+            width: 100%;
+            opacity: 0; }
+    body .tituloPrincipalClases {
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 2% 0%; }
     body .contenidoClases {
       grid-area: section;
       display: grid;
@@ -338,6 +409,7 @@ body {
       column-gap: 5%;
       grid-template-areas: ". c1 c2 ."; }
       body .contenidoClases .contenedorClase {
+        margin: 5% 0%;
         width: 100%;
         position: relative; }
         body .contenidoClases .contenedorClase img {
@@ -360,13 +432,16 @@ body {
             text-align: center; }
           body .contenidoClases .contenedorClase .contenidoAdicional .diaClase {
             grid-area: dia;
-            font-size: 1.5rem; }
+            font-size: 1.5rem;
+            opacity: 0; }
           body .contenidoClases .contenedorClase .contenidoAdicional .categoriaClase {
             grid-area: categoria;
-            font-size: 1.5rem; }
+            font-size: 1.5rem;
+            opacity: 0; }
           body .contenidoClases .contenedorClase .contenidoAdicional .profesorClase {
             grid-area: profe;
-            font-size: 1.5rem; }
+            font-size: 1.5rem;
+            opacity: 0; }
     body footer {
       background-color: #6fd1ff;
       grid-area: footer;
@@ -404,3 +479,29 @@ body {
         body footer .contenedorMapa .mapa {
           height: 70%;
           width: 70%; } }
+
+.wtsappFlotante {
+  position: fixed; }
+  @media (min-width: 720px) {
+    .wtsappFlotante {
+      top: 80%;
+      left: 90%;
+      z-index: 999999; }
+      .wtsappFlotante a {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row; }
+        .wtsappFlotante a img {
+          width: 50%; } }
+  @media (min-width: 320px) and (max-width: 430px) {
+    .wtsappFlotante {
+      top: 85%;
+      left: 85%; }
+      .wtsappFlotante a {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row; }
+        .wtsappFlotante a img {
+          height: 100%;
+          width: 100%; } }
