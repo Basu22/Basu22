@@ -17,7 +17,7 @@
     .contenedorClase{
         margin: 5% 0%;
         //mixin en _variables - linea 24
-        @include contenedorClase(100%);
+        @include contenedorClase(100%,1);
     }
     
 }

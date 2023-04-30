@@ -49,17 +49,20 @@ body {
     grid-area: dia;
     font-size: 1.5rem;
     opacity: 1;
-    transition: all 2s; }
+    transition: all 2s;
+    text-align: center; }
   .entradaContenidoAdicional .categoriaClase {
     grid-area: categoria;
     font-size: 1.5rem;
     opacity: 1;
-    transition: all 2s; }
+    transition: all 2s;
+    text-align: center; }
   .entradaContenidoAdicional .profesorClase {
     grid-area: profe;
     font-size: 1.5rem;
     opacity: 1;
-    transition: all 2s; }
+    transition: all 2s;
+    text-align: center; }
 
 .salidaContenidoAdicional {
   display: grid;
@@ -81,17 +84,20 @@ body {
     grid-area: dia;
     font-size: 1.5rem;
     opacity: 0;
-    transition: all 2s; }
+    transition: all 2s;
+    text-align: center; }
   .salidaContenidoAdicional .categoriaClase {
     grid-area: categoria;
     font-size: 1.5rem;
     opacity: 0;
-    transition: all 2s; }
+    transition: all 2s;
+    text-align: center; }
   .salidaContenidoAdicional .profesorClase {
     grid-area: profe;
     font-size: 1.5rem;
     opacity: 0;
-    transition: all 2s; }
+    transition: all 2s;
+    text-align: center; }
 
 @media (min-width: 320px) and (max-width: 430px) {
   body {
@@ -218,15 +224,18 @@ body {
           body .contenidoClases .contenedorClase .contenidoAdicional .diaClase {
             grid-area: dia;
             font-size: 1.5rem;
-            opacity: 0; }
+            opacity: 1;
+            text-align: center; }
           body .contenidoClases .contenedorClase .contenidoAdicional .categoriaClase {
             grid-area: categoria;
             font-size: 1.5rem;
-            opacity: 0; }
+            opacity: 1;
+            text-align: center; }
           body .contenidoClases .contenedorClase .contenidoAdicional .profesorClase {
             grid-area: profe;
             font-size: 1.5rem;
-            opacity: 0; }
+            opacity: 1;
+            text-align: center; }
     body footer {
       background-color: #6fd1ff;
       grid-area: footer;
@@ -435,15 +444,18 @@ body {
           body .contenidoClases .contenedorClase .contenidoAdicional .diaClase {
             grid-area: dia;
             font-size: 1.5rem;
-            opacity: 0; }
+            opacity: 0;
+            text-align: center; }
           body .contenidoClases .contenedorClase .contenidoAdicional .categoriaClase {
             grid-area: categoria;
             font-size: 1.5rem;
-            opacity: 0; }
+            opacity: 0;
+            text-align: center; }
           body .contenidoClases .contenedorClase .contenidoAdicional .profesorClase {
             grid-area: profe;
             font-size: 1.5rem;
-            opacity: 0; }
+            opacity: 0;
+            text-align: center; }
     body footer {
       background-color: #6fd1ff;
       grid-area: footer;

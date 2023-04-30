@@ -21,17 +21,17 @@ body{
     font-family: $fuente-principal;
 }
 
-@mixin contenedorClase($heigth){
+@mixin contenedorClase($heigth,$opacity){
         width: 100%;
         position: relative;
         img{
             object-fit: contain;
             width: 100%;
         }
-        @include contenidoAdicional($heigth);
+        @include contenidoAdicional($heigth,$opacity);
 }
 
-@mixin contenidoAdicional($heigth){
+@mixin contenidoAdicional($heigth,$opacity){
     .contenidoAdicional{
         display: grid;
         grid-template-areas: 
@@ -57,19 +57,22 @@ body{
         .diaClase{
             grid-area: dia;
             font-size: 1.5rem;
-            opacity: 0;
+            opacity: $opacity;
+            text-align: center;
         }
 
         .categoriaClase{
             grid-area: categoria;
             font-size: 1.5rem;
-            opacity: 0;
+            opacity: $opacity;
+            text-align: center;
         }
 
         .profesorClase{
             grid-area: profe;
             font-size: 1.5rem;
-            opacity: 0;
+            opacity: $opacity;
+            text-align: center;
         }
     
     }
@@ -121,6 +124,7 @@ body{
         font-size: 1.5rem;
         opacity: $opacity;
         transition: all 2s;
+        text-align: center;
     }
     
     .categoriaClase{
@@ -128,6 +132,7 @@ body{
         font-size: 1.5rem;
         opacity: $opacity;
         transition: all 2s;
+        text-align: center;
     }
     
     .profesorClase{
@@ -135,5 +140,6 @@ body{
         font-size: 1.5rem;
         opacity: $opacity;
         transition: all 2s;
+        text-align: center;
     }
 }
