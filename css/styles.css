@@ -150,36 +150,38 @@ body {
         align-items: center;
         padding: 20px;
         font-size: 1.5rem; }
-      body main .seccionFotos .contenedorC1 {
-        width: 100%; }
-        body main .seccionFotos .contenedorC1 img {
-          object-fit: contain;
-          width: 100%;
-          height: auto; }
-      body main .seccionFotos .contenedorMV1 {
-        width: 100%; }
-        body main .seccionFotos .contenedorMV1 img {
-          object-fit: contain;
-          width: 100%;
-          height: auto; }
-      body main .seccionFotos .contenedorMV2 {
-        width: 100%; }
-        body main .seccionFotos .contenedorMV2 img {
-          object-fit: contain;
-          width: 100%;
-          height: auto; }
-      body main .seccionFotos .contenedorP1 {
-        width: 100%; }
-        body main .seccionFotos .contenedorP1 img {
-          object-fit: contain;
-          width: 100%;
-          height: auto; }
-      body main .seccionFotos .contenedorP2 {
-        width: 100%; }
-        body main .seccionFotos .contenedorP2 img {
-          object-fit: contain;
-          width: 100%;
-          height: auto; }
+      body main .seccionFotos {
+        overflow: hidden; }
+        body main .seccionFotos .contenedorC1 {
+          width: 100%; }
+          body main .seccionFotos .contenedorC1 img {
+            object-fit: contain;
+            width: 100%;
+            height: auto; }
+        body main .seccionFotos .contenedorMV1 {
+          width: 100%; }
+          body main .seccionFotos .contenedorMV1 img {
+            object-fit: contain;
+            width: 100%;
+            height: auto; }
+        body main .seccionFotos .contenedorMV2 {
+          width: 100%; }
+          body main .seccionFotos .contenedorMV2 img {
+            object-fit: contain;
+            width: 100%;
+            height: auto; }
+        body main .seccionFotos .contenedorP1 {
+          width: 100%; }
+          body main .seccionFotos .contenedorP1 img {
+            object-fit: contain;
+            width: 100%;
+            height: auto; }
+        body main .seccionFotos .contenedorP2 {
+          width: 100%; }
+          body main .seccionFotos .contenedorP2 img {
+            object-fit: contain;
+            width: 100%;
+            height: auto; }
     body .tituloPrincipalClases {
       display: flex;
       justify-content: center;
