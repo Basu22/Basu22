@@ -30,11 +30,11 @@ function addNavegador(){
     let li_unete = document.createElement('li')
     
     let a_li_clases = document.createElement('a')
-    a_li_clases.href = './pages/clases.html'
+    a_li_clases.href = 'clases.html'
     a_li_clases.text = 'Clases'
 
     let a_li_unite = document.createElement('a')
-    a_li_unite.href = './pages/unete.html'
+    a_li_unite.href = 'unete.html'
     a_li_unite.text = 'Unite al Equipo'
 
     header.appendChild(nav).appendChild(navContenido).appendChild(li_clase).appendChild(a_li_clases)
