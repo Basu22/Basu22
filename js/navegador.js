@@ -1,5 +1,4 @@
 document.body.onload = addNavegador;
-let path = window.location.origin
 
 function addNavegador(){
     let header = document.querySelector('header');
@@ -8,9 +7,9 @@ function addNavegador(){
     seccion_logo.classList.add('logo');
     
     let a_logo = document.createElement('a');
-    a_logo.href = path+"/index.html"
+    a_logo.href = "../index.html"
     let img_logo = document.createElement('img')
-    img_logo.src = path+"/img/logos/Celeste Mobile sin fondo.png"
+    img_logo.src = "/img/logos/Celeste Mobile sin fondo.png"
 
     header.appendChild(seccion_logo).appendChild(a_logo).appendChild(img_logo)
      //fin logo navegador
@@ -31,11 +30,11 @@ function addNavegador(){
     let li_unete = document.createElement('li')
     
     let a_li_clases = document.createElement('a')
-    a_li_clases.href = path+'/pages/clases.html'
+    a_li_clases.href = './pages/clases.html'
     a_li_clases.text = 'Clases'
 
     let a_li_unite = document.createElement('a')
-    a_li_unite.href = path+'/pages/unete.html'
+    a_li_unite.href = './pages/unete.html'
     a_li_unite.text = 'Unite al Equipo'
 
     header.appendChild(nav).appendChild(navContenido).appendChild(li_clase).appendChild(a_li_clases)
