@@ -2,27 +2,43 @@ header{
     background-color: rgb(111, 209, 255);
     grid-area: header;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
     grid-template-rows: 25vh;
     grid-template-areas: 
-    "logo . nav nav";
+    "navg";
 
-    .logo{
-        grid-area: logo;
-        justify-self: center;
-        img{
-            height: 100%;
-        }// FIN DE img
-    } // FIN DE .logo
-
+    
     .nav{
-        grid-area: nav;
+        height: 100%;
+        grid-area: navg;
+        grid-template-areas: 
+        "navContenido";
         align-self: center;
         .navContenido{
+            height: 100%;
+            grid-area: navContenido;
+            grid-template-areas:
+            "navg1 logo .";
             list-style: none;
             display: flex;
-            justify-content: space-around;
-            li{
+            justify-content: space-evenly;
+            .logo{
+                grid-area: logo;
+                justify-self: center;
+                img{    
+                    height: 100%;
+                }// FIN DE img
+            } // FIN DE .logo
+            .navg1{
+                grid-area: navg1;
+                align-self: center;
+                a {
+                    text-decoration: none;
+                    font-size: 2rem;
+                }
+            }
+            .navg2{
+                grid-area: navg1;
+                align-self: center;
                 a {
                     text-decoration: none;
                     font-size: 2rem;

@@ -264,24 +264,37 @@ body {
       background-color: #6fd1ff;
       grid-area: header;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 25vh;
-      grid-template-areas: "logo . nav nav"; }
-      body header .logo {
-        grid-area: logo;
-        justify-self: center; }
-        body header .logo img {
-          height: 100%; }
+      grid-template-areas: "navg"; }
       body header .nav {
-        grid-area: nav;
+        height: 100%;
+        grid-area: navg;
+        grid-template-areas: "navContenido";
         align-self: center; }
         body header .nav .navContenido {
+          height: 100%;
+          grid-area: navContenido;
+          grid-template-areas: "navg1 logo .";
           list-style: none;
           display: flex;
-          justify-content: space-around; }
-          body header .nav .navContenido li a {
-            text-decoration: none;
-            font-size: 2rem; }
+          justify-content: space-evenly; }
+          body header .nav .navContenido .logo {
+            grid-area: logo;
+            justify-self: center; }
+            body header .nav .navContenido .logo img {
+              height: 100%; }
+          body header .nav .navContenido .navg1 {
+            grid-area: navg1;
+            align-self: center; }
+            body header .nav .navContenido .navg1 a {
+              text-decoration: none;
+              font-size: 2rem; }
+          body header .nav .navContenido .navg2 {
+            grid-area: navg1;
+            align-self: center; }
+            body header .nav .navContenido .navg2 a {
+              text-decoration: none;
+              font-size: 2rem; }
       body header .iconoNav {
         display: none; }
     body .contenidoPrincipal {
