@@ -13,7 +13,7 @@ function addNavegador(){
                 <li class="navg1"><a href="clases.html">Clases</a></li>
                 <section class="logo">
                     <a href="index.html">
-                        <img src="/img/logos/Celeste Mobile sin fondo.png" alt="">
+                        <img src="./img/logos/Celeste Mobile sin fondo.png" alt="">
                     </a>
                 </section>
                 <li class="navg2"><a href="unete.html">Unite al Equipo</a></li>
@@ -23,7 +23,7 @@ function addNavegador(){
         header.innerHTML=
             `<section class="logo">
                 <a href="index.html">
-                    <img src="/img/logos/Celeste Mobile sin fondo.png" alt="">
+                    <img src="./img/logos/Celeste Mobile sin fondo.png" alt="">
                 </a>
             </section>
             <section class="iconoNav">
