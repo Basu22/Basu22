@@ -274,7 +274,7 @@ body {
         body header .nav .navContenido {
           height: 100%;
           grid-area: navContenido;
-          grid-template-areas: "navg1 logo .";
+          grid-template-areas: "navg1 logo navg2";
           list-style: none;
           display: flex;
           justify-content: space-evenly; }
@@ -283,6 +283,8 @@ body {
             justify-self: center; }
             body header .nav .navContenido .logo img {
               height: 100%; }
+            body header .nav .navContenido .logo :hover {
+              transform: translateY(-15px); }
           body header .nav .navContenido .navg1 {
             grid-area: navg1;
             align-self: center; }
@@ -290,7 +292,7 @@ body {
               text-decoration: none;
               font-size: 2rem; }
           body header .nav .navContenido .navg2 {
-            grid-area: navg1;
+            grid-area: navg2;
             align-self: center; }
             body header .nav .navContenido .navg2 a {
               text-decoration: none;

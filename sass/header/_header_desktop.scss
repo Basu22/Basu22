@@ -17,7 +17,7 @@ header{
             height: 100%;
             grid-area: navContenido;
             grid-template-areas:
-            "navg1 logo .";
+            "navg1 logo navg2";
             list-style: none;
             display: flex;
             justify-content: space-evenly;
@@ -26,6 +26,8 @@ header{
                 justify-self: center;
                 img{    
                     height: 100%;
+                }:hover{
+                    transform: translateY(-15px);
                 }// FIN DE img
             } // FIN DE .logo
             .navg1{
@@ -37,7 +39,7 @@ header{
                 }
             }
             .navg2{
-                grid-area: navg1;
+                grid-area: navg2;
                 align-self: center;
                 a {
                     text-decoration: none;
