@@ -10,6 +10,7 @@ window.addEventListener('scroll', function() {
   const containerTop = containerMV1.getBoundingClientRect().top;
   const containerBottom = containerMV1.getBoundingClientRect().bottom;
 
+
   if (containerTop < window.innerHeight && containerBottom > 0) {
     imageMV1.style.transition = 'all 2s';
     imageMV1.style.transform = 'translateY(0%)';

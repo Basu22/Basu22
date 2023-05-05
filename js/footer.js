@@ -1,8 +1,5 @@
 document.body.onload = addFooter;
-
-
 function addFooter(){
-    console.log('pasa footer')
     let footer = document.querySelector('footer');
     
     footer.innerHTML = `        
